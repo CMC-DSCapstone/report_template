@@ -1,0 +1,26 @@
+\chapter{Formatting your Bibliography}\label{Ch:formatting_your_bibliography}
+
+Create a separate .bib file and fill it with bib entries for each paper or book you read as follows:\\
+
+\noindent @article\{Gerdil2003,\\
+	Author = \{Catherine Gerdil\},\\
+	Title = \{\{The Annual Production Cycle for Influenza Vaccine\}\},\\
+	Journal = \{Vaccine\},\\
+	Volume = \{21\},\\
+	Pages = \{1776--1779\},\\
+	Year = \{2003\}\\
+	\}
+
+\begin{enumerate}{}
+\item Use double curly brackets around the title to force formatting that way you type it. Otherwise, depending on the bibliography style set, Latex might auto sentence-case your title and made abbreviations not show up in all caps. 
+\item Use two minus signs for a dash between page numbers.
+\item Only sources that are cited in your document with the cite command will show up in your bibliography, typically in the order in which you cite them (dependent on bibliography style).
+\item If you are citing a fact, you cite at the end of the sentence that first mentions that fact. There is no need to recite in the document for the same fact.
+\item If you are mentioning explicitly a paper, book, or other citable document, you cite immediately after that mention. Keep in mind there needs to be a space between the cite command and the last word. 
+\item When citing a source with multiple authors, you refer to it as "first\_author's\_last\_name et al." and then immediately cite.
+\item Citations appear before the period that ends the sentence. 
+\item BE CAREFUL of the export citation tools found on journal websites. What often comes out is riddled with errors. If you choose to use them (I suggest you don't and just type everything out yourself), go through with a fine comb and check your bibliography for errors. 
+\end{enumerate}
+
+
+\endinput

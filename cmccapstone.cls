@@ -6,15 +6,15 @@
 %
 % Jeho Park <jeho.park@cmc.edu>
 %
-% GitHub Repo: 
-% Overleaf: 
+% GitHub Repo: [To be included]
+% Overleaf: [To be included]
 %
 %*****************************************************************************
 % [This LaTeX class is originally created as the HMC Clinic Class by] 
 % Claire Connelly <cmc@math.hmc.edu>
 %              and 
 % Melissa O'Neill <oneill@cs.hmc.edu>
-
+%
 % Modified by Jeho Park <jeho.park@cmc.edu> to fit the class to CMC Data Science Capstone Report
 % Last Modification Date: 4/7/2020
 %******************************************************************************* 
@@ -85,6 +85,7 @@
 \RequirePackage[obeyspaces,spaces]{url}
 \RequirePackage{fancyhdr}
 \RequirePackage{caption}[2010/01/09]
+\RequirePackage{tcolorbox}
 \captionsetup{
   font={small,sf}                % Use small, sans-serif text.
   ,labelfont=bf                  % Make label bold.
@@ -92,7 +93,6 @@
   ,justification=justified       % Justify caption.
   ,margin=2em
 }
-
 
 \AtBeginDocument{
   %%% Define caption appearance for subfigures (requires subfig

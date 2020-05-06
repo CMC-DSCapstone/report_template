@@ -1,0 +1,39 @@
+\chapter{Equation Etiquette}\label{Ch:equation_etiquette}
+
+This is an example of an equation that comes at the end of a sentence:
+%
+\begin{equation}
+    \mathrm{Area} = \pi r^2.
+\end{equation}
+%
+Note the above has a period at the end of the equation because it was at the end, but the following equation,
+%
+\begin{equation}
+    p_{\mathrm{Normal}}(x\vert \mu, \sigma^2) = \frac{1}{\sqrt{2 \pi \sigma^2}}\mathrm{exp}\left[-\frac{(x - \mu)^2}{2 \sigma^2}\right],
+\end{equation}
+%
+has a comma at the end because it's in the middle of a sentence.
+
+Here's an example of a multi line equation using the align command:
+%
+\begin{align}
+    \mathrm{E}[X] &= \sum_{n=1}^{6} n \mathrm{Pr}(X=n)\nonumber\\
+    &= \sum_{n=1}^{6} n \frac{1}{6}\nonumber\\
+    &= 3.6.
+\end{align}
+%
+Take note of the use of the nonumber command to suppress the extra equation numbers.
+
+
+\begin{enumerate}{}
+\item Use equation for single line equations and use align for multiple line equations.
+\item For multiple line equations, use nonumber to suppress the extra equation numbers.
+\item Math symbols and variables are italicized; English words are not. Thus, use mathrm when in Mathmode to specify the English words. This is a subtle point, but subscripts and function names that are actually abbreviations of English words should still be treated as normal English.
+\item Surround your equation/align commands by \% so that there are no unintentional new paragraphs while making your Latex more readable.
+\item Math equations are part of your sentence, so use punctuation accordingly: if the equation is at the end, use a period; if the equation is in the middle of your sentence, use a comma.
+\item Create labels for your equations and when you reference them, use the tilda to create a small space as so: You can find the result in Eq.\textasciitilde\textbackslash ref\{EQ\_IMPORTANTRESULT\}.
+\item For inline math, surround your math with dollar signs. Keep in mind the format might look a little different to fit large symbols, such as in $\sum_{n=1}^{6} \frac{1}{6} = 1$.
+\end{enumerate}
+
+
+\endinput
